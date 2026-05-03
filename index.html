@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botas Trips</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ⚠️ OPCIONAL: comenta esto si da problemas -->
+  <link rel="stylesheet" href="assets/css/design-system.css"> 
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+ <script src="assets/js/script.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+  <a href="#hero" class="logo">
+    <img src="assets/img/logo.svg">
+</a>
+
+  <!-- BARRA GLASS -->
+  <div class="nav-glass">
+
+    <!-- DROPDOWN DESTINOS -->
+    <div class="nav-item dropdown-nav">
+
+      <button id="navDestinos" class="nav-btn">
+        Destinos 
+        <img src="assets/img/chevron.png" class="chevron-icon" id="chevron">
+      </button>
+      
+      <div id="navDropdown" class="dropdown hidden">
+        <div class="option" data-url="pages/peru.html">Perú 🇵🇪</div>
+        <div class="option" data-url="pages/argentina.html">Argentina 🇦🇷</div>
+        <div class="option" data-url="pages/cartagena.html">Cartagena 🇨🇴</div>
+        <div class="option" data-url="pages/medellin.html">Medellín 🇨🇴</div>
+      </div>
+
+    </div>
+
+    <!-- LINK -->
+    
+
+    <!-- CTA -->
+    <a href="https://wa.me/503XXXXXXXX" class="btn-pill">
+      Cotizar
+    </a>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+
+  <!-- FONDO -->
+  <img src="assets/img/hero.jpg" class="hero-bg">
+  <div class="overlay"></div>
+
+  <!-- ELEMENTOS -->
+  <img src="assets/img/avion.png" class="plane">
+  <img src="assets/img/nube 1.png" class="cloud cloud-left">
+  <img src="assets/img/nube 2.png" class="cloud cloud-right">
+
+  <!-- CONTENIDO CENTRADO -->
+  <div class="hero-content">
+
+    <h1 class="hero-title">
+      Los mejores destinos de América, sin complicaciones
+    </h1>
+
+    <p class="hero-subtitle">
+     
+      +500 viajeros ya vivieron la experiencia Botas Trips
+    </p>
+
+    <!-- BUSCADOR -->
+   
+  <!-- INPUT COMO BOTÓN -->
+  <!-- BOTONES -->
+<div class="hero-buttons">
+
+  <div class="input-container">
+    <input id="destinoInput" placeholder="Explorar tours" readonly>
+  </div>
+
+  <a href="https://wa.me/50371088576?text=Hola%20quiero%20información%20sobre%20los%20tours" 
+     class="btn-secondary" 
+     target="_blank">
+    Hablar con un asesor
+  </a>
+
+</div>
+
+</div>
+   
+
+</section>
+
+<!-- DESTINOS DESTACADOS -->
+<section id="destinos" class="destinos">
+
+  <div class="container">
+
+  <h3>Destinos destacados</h3>
+  <p class="subtitle">
+    Descubre destinos increíbles con experiencias diseñadas para ti
+  </p>
+
+  <div class="destinos-container">
+
+          <!-- PERÚ -->
+        <a href="pages/peru.html" class="card">
+
+      <div class="card-img">
+        <img src="assets/img/Fotos/Peru/portadaperu.jpg">
+
+        <!-- BADGE -->
+        <div class="card-badge">
+          <img src="assets/img/peru.png"flag-icon">
+          <span>PE</span>
+        </div>
+      </div>
+
+      <!-- TEXTO (FUERA del badge) -->
+      <div class="card-text">
+        <h4>Perú</h4>
+        <p class="card-meta">
+          <img src="assets/img/nav.png" class="nav-icon">
+          +150 tours
+        </p>
+      </div>
+
+  </a>
+  
+
+    <!-- ARGENTINA -->
+     <a href="pages/argentina.html" class="card">
+      <div class="card-img">
+        <img src="assets/img/Fotos/Argentina/portadaargentina.jpg">
+        
+      
+      <div class="card-badge">
+          <img src="assets/img/argentina.png" class="flag-icon">
+          <span>AR</span>
+        </div>
+      </div>
+      <div class="card-text">
+        <h4>Argentina</h4>
+        <p class="card-meta">
+          <img src="assets/img/nav.png" class="nav-icon">
+          +120 tours
+        </p>
+      </div>
+  </a>
+
+    <!-- CARTAGENA -->
+     <a href="pages/cartagena.html" class="card">
+      <div class="card-img">
+        <img src="assets/img/Fotos/Cartagena/portadacartagena.jpg">
+      <div class="card-badge">
+          <img src="assets/img/colombia.png" class="flag-icon">
+          <span>CO</span>
+        </div>
+      </div>
+      <div class="card-text">
+        <h4>Cartagena</h4>
+        <p class="card-meta">
+          <img src="assets/img/nav.png" class="nav-icon">
+          +200 tours
+        </p>
+      </div>
+    </a>
+
+    <!-- MEDELLÍN -->
+     <a href="pages/medellin.html" class="card">
+      <div class="card-img">
+        <img src="assets/img/Fotos/Medellin/portadamedellin.jpg">
+        <div class="card-badge">
+          <img src="assets/img/colombia.png" class="flag-icon">
+          <span>CO</span>
+        </div>
+      </div>
+      <div class="card-text">
+        <h4>Medellín</h4>
+        <p class="card-meta">
+          <img src="assets/img/nav.png" class="nav-icon">
+          +90 tours
+        </p>
+      </div>
+  </a>
+</div>
+
+  
+</section>
+<!-- SOBRE NOSOTROS -->
+<section class="why-us">
+
+  <div class="why-container">
+
+    <!-- TEXTO -->
+    <div class="why-text">
+
+      
+
+      <h2 class="why-title">
+        Destinos increíbles,<br> atención real
+      </h2>
+
+      <p class="why-desc">
+        Somos una agencia salvadoreña comprometida con darte algo más que un boleto: te damos tranquilidad, acompañamiento y experiencias que valen la pena. Porque viajar bien empieza por elegir bien.
+      </p>
+
+      <div class="why-items">
+
+        <div class="why-item">
+          <div class="icon">
+            <img src="assets/img/avion2.png">
+          </div>
+          <div>
+            <h4>Viajes seguros</h4>
+            <p>Cada destino, cuidadosamente verificado. Viajás con respaldo real en cada paso del camino.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="icon">
+            <img src="assets/img/dinero.png">
+          </div>
+          <div>
+            <h4>Mejores precios</h4>
+            <p>Sin costos ocultos. Te ofrecemos el mejor precio del mercado con total transparencia.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="icon">
+            <img src="assets/img/locacion.png">
+          </div>
+          <div>
+            <h4>Experiencias únicas</h4>
+            <p>Cada itinerario está pensado para que vivas algo que no encontrarás en ningún otro lado.</p>
+          </div>
+        </div>
+      <div class="why-buttons">
+
+        <a href="https://wa.me/50371088576?text=Hola%20quiero%20información" 
+          class="btn-primary3" 
+          target="_blank">
+          Contáctanos
+        </a>
+
+        <a href="#destinos" class="btn-outline">
+          Ver Tours
+        </a>
+
+      </div>
+        
+
+      </div>
+
+    </div>
+
+    <!-- IMÁGENES -->
+    <div class="why-images">
+
+      <!-- PNG DECORATIVO -->
+    
+
+      <!-- IMÁGENES -->
+      <img src="assets/img/coliseo.png" class="img-main">
+      
+      
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OPINIONES -->
+<section class="reviews">
+
+  <div class="reviews-container">
+
+    <!-- TEXTO IZQUIERDA -->
+    <div class="reviews-info">
+      <h2>Lo que dicen<br>nuestros viajeros</h2>
+
+      <p>
+        Nada nos llena más que saber que nuestros clientes viajaron tranquilos,
+        felices y con ganas de repetir.
+      </p>
+
+      <!-- GOOGLE CARD -->
+      <div class="google-card">
+        <img src="assets/img/google.png" alt="Google">
+        <div>
+          ⭐⭐⭐⭐⭐
+          <h4>5.0 REVIEWS</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="reviews-slider">
+
+      <div class="reviews-track" id="track">
+
+        <!-- ORIGINAL -->
+        <div class="review-card">
+          <p>Perú es increíble toda su cultura ancestral INCA...</p>
+          <div class="review-user">
+            <img src="assets/img/persona.png">
+            <div>⭐⭐⭐⭐⭐ <span>Brian Clark</span></div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>Todo muy bien organizado y cumplen en todo lo ofrecido...</p>
+          <div class="review-user">
+            <img src="assets/img/persona.png">
+            <div>⭐⭐⭐⭐⭐ <span>Maria Lopez</span></div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>Viaje espectacular, atención increíble...</p>
+          <div class="review-user">
+            <img src="assets/img/persona.png">
+            <div>⭐⭐⭐⭐⭐ <span>Carlos Ruiz</span></div>
+          </div>
+        </div>
+
+        <!-- DUPLICADAS (para infinito) -->
+        <div class="review-card">
+          <p>Perú es increíble toda su cultura ancestral INCA...</p>
+          <div class="review-user">
+            <img src="assets/img/persona.png">
+            <div>⭐⭐⭐⭐⭐ <span>Brian Clark</span></div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>Todo muy bien organizado y cumplen en todo lo ofrecido...</p>
+          <div class="review-user">
+            <img src="assets/img/persona.png">
+            <div>⭐⭐⭐⭐⭐ <span>Maria Lopez</span></div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>Viaje espectacular, atención increíble...</p>
+          <div class="review-user">
+            <img src="assets/img/persona.png">
+            <div>⭐⭐⭐⭐⭐ <span>Carlos Ruiz</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- UBICACIÓN -->
+<!-- UBICACIÓN -->
+<section class="location">   
+  <div class="location-bg">
+
+  <div class="location-container">
+    <!-- FONDO DECORATIVO -->
+    <img src="assets/img/avion4.png" class="plane-bg">
+    <!-- TEXTO -->
+    <div class="location-text">
+      <h2>Visítanos y planifica tu<br>viaje en persona</h2>
+
+      <p>
+        Estamos ubicados en Urbanización Ciudad Credisa, Soyapango.
+        Si prefieres planificar tu viaje cara a cara, aquí estamos
+        para recibirte y resolver cada duda que tengas.
+      </p>
+    </div>
+
+    <!-- MAPA -->
+    <div class="location-map">
+
+      <iframe
+        src="https://www.google.com/maps?q=Soyapango,El+Salvador&output=embed"
+        loading="lazy">
+      </iframe>
+
+      
+
+    </div>
+   </div>
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+<section class="faq">
+
+  <div class="faq-container">
+
+    <h2>Preguntas frecuentes</h2>
+
+    <p class="faq-subtitle">
+      Sabemos que planificar un viaje trae muchas preguntas. Aquí están las más comunes,
+      pero si no encuentras lo que buscas puedes escribirnos y te respondemos personalmente.
+    </p>
+
+    <!-- ITEM ACTIVO -->
+    <details class="faq-item" open>
+      <summary>
+        ¿Cómo puedo reservar mi viaje?
+        <span class="icon">+</span>
+      </summary>
+      <p>
+        Puedes visitarnos en nuestra oficina en Soyapango o contactarnos por nuestros canales digitales.
+        Te asesoramos paso a paso para que tu reserva sea rápida y sin complicaciones.
+      </p>
+    </details>
+
+    <!-- ITEMS -->
+    <details class="faq-item">
+      <summary>
+        ¿Los precios incluyen todo?
+        <span class="icon">+</span>
+      </summary>
+      <p>Depende del paquete seleccionado.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        ¿Puedo viajar si nunca he salido del país antes?
+        <span class="icon">+</span>
+      </summary>
+      <p>Sí, te guiamos en todo el proceso.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        ¿Qué pasa si necesito cancelar mi viaje?
+        <span class="icon">+</span>
+      </summary>
+      <p>Dependerá de las políticas del paquete.</p>
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+   CTA FINAL
+========================= -->
+<section id="contacto" class="cta-final">
+
+  <div class="cta-box">
+
+    <div class="cta-text">
+      <span class="cta-tag1">¿Listo para salir?</span>
+      <h2>Nosotros nos encargamos de todo.</h2>
+    </div>
+
+    <div class="cta-buttons">
+      
+      <a href="../index.html" class="cta-tag" >
+        Explorar tours
+      </a>
+     <a href="https://wa.me/503XXXXXXXX" 
+        class="btn-secondary" 
+        target="_blank">
+        Hablar con un asesor
+    </a>
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================
+   FOOTER PRO
+========================= -->
+<footer class="footer-pro">
+
+  <!-- AVIÓN DECORATIVO -->
+  <img src="assets/img/avion5.png" class="footer-plane">
+
+  <div class="footer-container">
+
+    <!-- LOGO -->
+    <div class="footer-brand">
+      <img src="assets/img/cafelogo.svg" alt="Botas Trips">
+      <p>2026 © Botas Trips – All rights reserved</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+
+      <div class="footer-col">
+        <h4>DESTINOS</h4>
+        <a href="#">Perú</a>
+        <a href="#">Argentina</a>
+        <a href="#">Cartagena</a>
+        <a href="#">Medellín</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Tours</h4>
+        <a href="#">Contacto</a>
+      </div>
+
+    </div>
+
+    <!-- REDES -->
+    <div class="footer-social">
+
+      <div class="social-icons">
+        <a href="#" class="circle">
+          <img src="assets/img/insta.png">
+        </a>
+
+        <a href="#" class="circle">
+          <img src="assets/img/fb.png">
+        </a>
+      </div>
+
+      <p class="phone">
+        <img src="assets/img/fon.png"> 71088576
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+const input = document.getElementById("destinoInput");
+const dropdown = document.getElementById("dropdown");
+const options = document.querySelectorAll(".option");
+
+// 🔥 abrir/cerrar al hacer click
+input.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("hidden");
+});
+
+// 🔥 seleccionar opción
+options.forEach(opt => {
+  opt.addEventListener("click", () => {
+    input.value = opt.textContent;
+    window.location.href = opt.dataset.url;
+  });
+});
+
+// 🔥 cerrar al hacer click afuera
+document.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target) && e.target !== input) {
+    dropdown.classList.add("hidden");
+  }
+});
+</script>
+<a href="https://wa.me/503XXXXXXXX" class="whatsapp-btn">
+  
+  <div class="wa-icon">
+   <img src="assets/img/wha.png">
+  </div>
+
+
+
+</a>
+</body>
+</html>
