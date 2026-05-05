@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
   }
 
-  initInfiniteSlider("track", 1.5);
+  initInfiniteSlider("track", 0.5);
   initInfiniteSlider("gtrack", 2);
 
 });
