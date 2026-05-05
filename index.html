@@ -19,16 +19,24 @@
 
 
 <!-- NAVBAR -->
+<!-- =========================
+     NAVBAR
+========================= -->
 <header class="navbar">
 
+  <!-- LOGO -->
   <a href="#hero" class="logo">
     <img src="assets/img/logo.svg">
-</a>
+  </a>
 
-  <!-- BARRA GLASS -->
+  <!-- HAMBURGUESA -->
+  <div class="menu-toggle" id="menuToggle">
+    ☰
+  </div>
+
+  <!-- NAV DESKTOP -->
   <div class="nav-glass">
 
-    <!-- DROPDOWN DESTINOS -->
     <div class="nav-item dropdown-nav">
 
       <button id="navDestinos" class="nav-btn">
@@ -36,19 +44,15 @@
         <img src="assets/img/chevron.png" class="chevron-icon" id="chevron">
       </button>
       
-      <div id="navDropdown" class="dropdown hidden">
-        <div class="option" data-url="pages/peru.html">Perú 🇵🇪</div>
-        <div class="option" data-url="pages/argentina.html">Argentina 🇦🇷</div>
-        <div class="option" data-url="pages/cartagena.html">Cartagena 🇨🇴</div>
-        <div class="option" data-url="pages/medellin.html">Medellín 🇨🇴</div>
+      <div id="navDropdown" class="dropdown">
+        <a href="pages/peru.html" class="option">Perú 🇵🇪</a>
+        <a href="pages/argentina.html" class="option">Argentina 🇦🇷</a>
+        <a href="pages/cartagena.html" class="option">Cartagena 🇨🇴</a>
+        <a href="pages/medellin.html" class="option">Medellín 🇨🇴</a>
       </div>
 
     </div>
 
-    <!-- LINK -->
-    
-
-    <!-- CTA -->
     <a href="https://wa.me/503XXXXXXXX" class="btn-pill">
       Cotizar
     </a>
@@ -57,6 +61,46 @@
 
 </header>
 
+
+<!-- =========================
+     MENU MOBILE (FUERA DEL NAVBAR 🔥)
+========================= -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-header">
+    <img src="assets/img/logo.svg" class="mobile-logo">
+
+    <div class="close-menu" id="closeMenu">✕</div>
+  </div>
+
+  <div class="mobile-links">
+
+    <div class="mobile-item" id="mobileDestinos">
+      Destinos ▾
+    </div>
+
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <a href="pages/peru.html">Perú 🇵🇪</a>
+      <a href="pages/argentina.html">Argentina 🇦🇷</a>
+      <a href="pages/cartagena.html">Cartagena 🇨🇴</a>
+      <a href="pages/medellin.html">Medellín 🇨🇴</a>
+    </div>
+
+    <hr>
+
+    <div class="mobile-item">Tours</div>
+
+    <hr>
+
+    <div class="mobile-item">Contacto</div>
+
+  </div>
+
+  <div class="mobile-cta">
+    <a href="#" class="btn-pill-mobile">Cotizar</a>
+  </div>
+
+</div>
 <!-- HERO -->
 <section id="hero" class="hero">
 
@@ -87,9 +131,11 @@
   <!-- BOTONES -->
 <div class="hero-buttons">
 
-  <div class="input-container">
-    <input id="destinoInput" placeholder="Explorar tours" readonly>
-  </div>
+  <a href="../index.html#Inicio" 
+     class="btn-primary4" 
+     target="_blank">
+    Explorar tours
+  </a>
 
   <a href="https://wa.me/50371088576?text=Hola%20quiero%20información%20sobre%20los%20tours" 
      class="btn-secondary" 
@@ -546,32 +592,7 @@
 
 </footer>
 
-<script>
-const input = document.getElementById("destinoInput");
-const dropdown = document.getElementById("dropdown");
-const options = document.querySelectorAll(".option");
 
-// 🔥 abrir/cerrar al hacer click
-input.addEventListener("click", (e) => {
-  e.stopPropagation();
-  dropdown.classList.toggle("hidden");
-});
-
-// 🔥 seleccionar opción
-options.forEach(opt => {
-  opt.addEventListener("click", () => {
-    input.value = opt.textContent;
-    window.location.href = opt.dataset.url;
-  });
-});
-
-// 🔥 cerrar al hacer click afuera
-document.addEventListener("click", (e) => {
-  if (!dropdown.contains(e.target) && e.target !== input) {
-    dropdown.classList.add("hidden");
-  }
-});
-</script>
 <a href="https://wa.me/503XXXXXXXX" class="whatsapp-btn">
   
   <div class="wa-icon">
