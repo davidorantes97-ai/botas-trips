@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://botastrips.com/sitemap.xml
