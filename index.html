@@ -627,11 +627,14 @@ Viajábamos con personas mayores y los cuidaron con tanto cariño y respeto que 
 
   <a href="https://wa.me/50376172843?text=Hola%20quiero%20información%20sobre%20los%20tours"
     class="whatsapp-btn"
-    onclick="gtag('event', 'whatsapp_click', {
+    target="_blank"
+
+    onclick="dataLayer.push({
+      event: 'whatsapp_click',
       event_category: 'contact',
       event_label: 'floating_button'
     });">
-    
+
     <div class="wa-icon">
       <img src="assets/img/wha.png">
     </div>
